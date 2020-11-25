@@ -4,7 +4,7 @@
   "description": "Intergration API for Reckon API",
   "scripts": {
     "start": "nodemon src/server.js",
-    "test": "mocha 'test/*Test.js' --exit"
+    "test": "nyc mocha 'test/*Test.js' --exit"
   },
   "keywords": [],
   "author": "Chetan Singh",
@@ -15,6 +15,7 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.3",
+    "nyc": "^15.1.0",
     "pug": "^3.0.0"
   },
   "devDependencies": {
