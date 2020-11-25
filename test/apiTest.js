@@ -12,11 +12,8 @@ const expect = require('chai').expect;
 chai.use(chaiHttp);
 
 describe('Reckon Integration', () => {
-  /*
-    GET The configurations
-  */
   describe("GET /", () => {
-    it("it should fetch If the number is wholly divisibele ", (done) => {    
+    it("it should fetch If the number is wholly divisible ", (done) => {
       chai.request(server)
         .get('/')
         .end((err, response) => {
@@ -25,10 +22,6 @@ describe('Reckon Integration', () => {
         })
     })
   })
-
-  /*
-    Merchant site makes and receives an order-token
-  */
   describe("GET /textToSearch", () => {
   it("It should all the occurrences of a particular set of characters in a string", (done) => {    
     chai.request(server)
